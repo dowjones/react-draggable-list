@@ -1,0 +1,50 @@
+div.container {
+  width: 200px;
+  height: 400px;
+  border: 1px solid black;
+}
+
+ul.drag-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.drag-list li {
+  margin: 0 0 8px;
+  font: 16px monospace;
+}
+
+ul.drag-list li.fixed {
+  background-color: #333;
+  color: #ccc;
+  padding: 8px;
+}
+
+ul.drag-list button {
+  border: none;
+  background-color: #eee;
+  display: block;
+  width: 100%;
+  text-align: left;
+  font: 16px monospace;
+  padding: 8px;
+}
+
+div.draggable-list {
+  /* Styles applied to draggable list container */
+}
+
+div.draggable-list-active {
+  /* Styles applied to draggable list container */
+}
+
+/* Apply a style to all list items while dragging. */
+div.draggable-list-active > ul > li {
+  width: 100%;
+}
+
+/* Apply styles to the dragged element. */
+ul.drag-list .draggable-list-element button {
+  background-color: #fcc;
+}
